@@ -4,46 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>자기소개 페이지</title>
-    <style>
-        body {
-            margin: 30px;
-        }
-
-        table {
-            width: 100%;
-        }
-
-        th,
-        td {
-            height: 10vh;
-            text-align: center;
-        }
-
-        table,
-        td,
-        th {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-
-        ;
-    </style>
+    <link rel="stylesheet" href="../css/global.css" />
 </head>
 
 <body>
     <div>
         <h1>자기소개</h1>
+        <div class="introdction-section">
+            <div>이름 : 마루</div>
+            <div>사는 곳 : 은평구</div>
+            <div>안녕하세용 왕복 3시간 통학중이고 초밥을 좋아합니다!</div>
+        </div>
     </div>
-    <div>
-        <div>이름 : 마루</div>
-        <div>사는 곳 : 은평구</div>
-        <div>안녕하세요 ! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque cumque eum commodi mollitia est
-            quibusdam enim libero asperiores laudantium dolore, facilis saepe accusamus optio quod eius a inventore.
-            Sit, dicta.</div>
-    </div>
-    <div style="border: 1px solid black; margin-top: 20px; padding: 30px;">
+    <div class="favorite-movie-section">
         <h1>인생 영화 BEST5</h1>
-        <div style="margin: 0 auto; border: 1px solid black;">
+        <div class="movie-table-section">
             <table>
                 <tr>
                     <th>순위</th>
@@ -91,25 +66,25 @@
             </table>
         </div>
     </div>
-    <div>
+    <div class="guestbook-input-section">
         <h1>방명록</h1>
-        <form style="display: flex; flex-direction: column; gap: 20px;">
-            <div style="display: flex; gap:10px;">
+        <form class="guestbook-form">
+            <div class="nickname-wrapper">
                 <div>닉네임 :</div>
                 <input id="nicknameInput" type="text" />
             </div>
-            <div style="display: flex; gap: 10px;">
+            <div class="select-movie-wrapper">
                 <div>여러분의 최애 영화는?</div>
                 <label><input type="checkbox" value="노트북" />노트북</label>
                 <label><input type="checkbox" value="너의 결혼식" />너의 결혼식</label>
                 <label><input type="checkbox" value="어바웃 타임" />어바웃 타임</label>
             </div>
             <div>
-                <button type="button">등록</button>
-                <button type="reset">취소</button>
+                <button type="button" class="button">등록</button>
+                <button type="reset" class="button">취소</button>
             </div>
         </form>
-        <div>
+        <div class="guestbook-output-section">
             <div>닉네임 왔다감 !</div>
         </div>
     </div>
