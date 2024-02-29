@@ -71,7 +71,7 @@
         <form class="guestbook-form">
             <div class="nickname-wrapper">
                 <div>닉네임 :</div>
-                <input id="nicknameInput" type="text" />
+                <input id="nicknameInput" type="text" required />
             </div>
             <div class="select-movie-wrapper">
                 <div>여러분의 최애 영화는?</div>
@@ -80,15 +80,13 @@
                 <label><input type="checkbox" value="어바웃 타임" />어바웃 타임</label>
             </div>
             <div>
-                <button type="button" class="button">등록</button>
-                <button type="reset" class="button">취소</button>
+                <button id="submitButton" type="button" class="button">등록</button>
+                <button id="resetButton" type="reset" class="button">취소</button>
             </div>
         </form>
-        <div class="guestbook-output-section">
-            <div>닉네임 왔다감 !</div>
-        </div>
+        <div class="guestbook-output-section"></div>
     </div>
-
+    <script src="../js/index.js"></script>
 </body>
 
 </html>
